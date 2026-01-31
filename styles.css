@@ -369,6 +369,117 @@ h1{
   flex-wrap:wrap;
 }
 
+/* PROMO SECTIONS (Fried/Frozen + Dessert Bar) */
+.promo-card h3{
+  margin:0 0 10px;
+  font-size:16px;
+}
+
+.promo-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 10px;
+  border-radius:999px;
+  background:#fff7ea;
+  border:1px solid rgba(200,162,90,.55);
+  font-weight:900;
+  font-size:12.5px;
+  color:#6d1320;
+}
+
+.price-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:8px 12px;
+  border-radius:14px;
+  background: linear-gradient(135deg, var(--accent), #6d1320);
+  color:#fff;
+  font-weight:950;
+  letter-spacing:.2px;
+  box-shadow: 0 10px 22px rgba(31,26,22,.12);
+}
+
+.promo-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:14px;
+  margin-top:12px;
+}
+@media (max-width: 860px){
+  .promo-grid{grid-template-columns:1fr}
+}
+
+.promo-box{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:14px;
+  position:relative;
+}
+.promo-box:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:16px;
+  pointer-events:none;
+  border:1px solid rgba(200,162,90,.22);
+}
+
+/* Dessert Bar layout */
+.dessert-layout{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:14px;
+  margin-top:12px;
+}
+@media (max-width: 860px){
+  .dessert-layout{grid-template-columns:1fr}
+}
+
+.dessert-menu,
+.dessert-details{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:14px;
+  position:relative;
+}
+.dessert-menu:before,
+.dessert-details:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:16px;
+  pointer-events:none;
+  border:1px solid rgba(200,162,90,.22);
+}
+
+.dessert-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
+}
+
+.dessert-item{
+  display:inline-flex;
+  padding:8px 10px;
+  border-radius:999px;
+  background:#fff7ea;
+  border:1px solid rgba(200,162,90,.45);
+  font-weight:850;
+  font-size:13px;
+  color:#2a211c;
+}
+
 /* simple gallery placeholders */
 .gallery{
   display:grid;
@@ -400,3 +511,4 @@ h1{
   flex-wrap:wrap;
 }
 .footer a{color: var(--accent); text-decoration:underline}
+
