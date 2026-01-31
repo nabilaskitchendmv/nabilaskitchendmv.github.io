@@ -64,16 +64,27 @@ main{padding:14px 0 34px}
   align-items:flex-start;
 }
 
+/* Logo area + better fallback */
 .logo-wrap{
-  background: none;
-  border: none;
-  box-shadow: none;
+  width:64px;
+  height:64px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
 }
-
 .logo-img{
   width:64px;
   height:auto;
   filter: drop-shadow(0 4px 10px rgba(0,0,0,.5));
+}
+.logo-wrap.logo-fallback{
+  border-radius:16px;
+  background: rgba(0,0,0,.30);
+  border:1px solid rgba(255,255,255,.18);
+  font-weight: 1000;
+  letter-spacing:.6px;
+  color:#fff;
+  text-shadow: 0 4px 10px rgba(0,0,0,.55);
 }
 
 h1{
@@ -103,7 +114,7 @@ h1{
 .muted{color:var(--muted)}
 .small{font-size:12.5px}
 
-/* CONTACT ICON CARDS */
+/* CONTACT (number once + icon actions) */
 .contact-wrap{
   margin-top: 14px;
   display: grid;
@@ -118,12 +129,12 @@ h1{
   padding:16px;
   border-radius:18px;
   border:1px solid rgba(255,255,255,.18);
-  background: rgba(0,0,0,.28);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,.22);
+  backdrop-filter: blur(10px);
 }
 
 .contact-left{
-  min-width: 220px;
+  min-width: 240px;
 }
 
 .contact-label{
@@ -131,45 +142,50 @@ h1{
   font-weight: 900;
   letter-spacing: .6px;
   text-transform: uppercase;
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.72);
 }
 
 .contact-number{
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 950;
   margin-top: 4px;
 }
 
 .contact-note{
   font-size: 12.5px;
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,.78);
   margin-top: 2px;
 }
 
 .contact-actions{
   display:flex;
   gap:10px;
+  flex: 0 0 auto;
 }
 
+/* Icon buttons that match the hero style */
 .icon-btn{
   width:46px;
   height:46px;
-  border-radius:50%;
+  border-radius:14px; /* not circles, looks more premium */
   display:grid;
   place-items:center;
   text-decoration:none;
-  font-size:20px;
   border:1px solid rgba(255,255,255,.22);
-  background: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.10);
   transition: transform .1s ease, background .15s ease, border-color .15s ease;
+  backdrop-filter: blur(6px);
 }
-
 .icon-btn:hover{
   transform: translateY(-2px);
-  background: rgba(255,255,255,.18);
-  border-color: rgba(255,255,255,.35);
+  background: rgba(255,255,255,.16);
+  border-color: rgba(255,255,255,.34);
 }
-
+.icon-btn svg{
+  width:22px;
+  height:22px;
+  fill: rgba(255,255,255,.94);
+}
 .icon-btn.wa{
   background: linear-gradient(135deg, #25D366, #128C7E);
   border-color: transparent;
@@ -181,13 +197,15 @@ h1{
     flex-direction: column;
     align-items:flex-start;
   }
+  .contact-actions{padding-top:6px}
 }
 
+/* Brand row stack on mobile */
 @media (max-width: 780px){
   .brand-row{flex-direction:column}
-  .logo-wrap{width:64px;height:64px}
 }
 
+/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -382,6 +400,3 @@ h1{
   flex-wrap:wrap;
 }
 .footer a{color: var(--accent); text-decoration:underline}
-
-
-
