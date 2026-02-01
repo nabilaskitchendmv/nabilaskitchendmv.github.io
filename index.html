@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nabila’s Kitchen - DMV</title>
-  
+
+  <title>Nabila’s Kitchen - DMV | Halal Catering in DMV</title>
+  <meta name="description" content="Halal desi catering based in Leesburg, VA serving the DMV (VA, MD, DC). Tray catering, appetizers, biryani, nihari, haleem, fried/frozen items for iftaar, and a dessert bar. Text or WhatsApp to order (48+ hours notice)." />
+
+  <!-- Favicons (keep your files in repo root) -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="android-chrome-192x192" href="/android-chrome-192x192.png">
   <link rel="android-chrome-512x512" href="/android-chrome-512x512.png">
-  
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -29,23 +32,51 @@
             </div>
 
             <div class="brand-text">
-              <h1>Nabila’s Kitchen - DMV</h1>
+              <h1>
+                Nabila’s Kitchen - DMV
+                <span class="h1-sub">Halal Catering in DMV</span>
+              </h1>
               <p class="subtitle">Desi & Halal Catering for Every Occasion</p>
               <p class="meta">Based in Leesburg, VA • Serving the DMV (VA • MD • DC) • Order at least 48 hours in advance</p>
             </div>
           </div>
 
-          <!-- Primary CTA row -->
+          <!-- Strong CTA row (menu is the main CTA) -->
           <div class="primary-cta">
-            <a class="btn primary" href="https://www.canva.com/design/DAG-5BALKgM/FkvgfMaFsAWCTbWJX9o6DQ/view?utm_content=DAG-5BALKgM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha887727b01" target="_blank" rel="noreferrer">
-              View Full Menu
+            <a class="btn primary btn-cta"
+               href="https://www.canva.com/design/DAG-5BALKgM/FkvgfMaFsAWCTbWJX9o6DQ/view?utm_content=DAG-5BALKgM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha887727b01"
+               target="_blank" rel="noreferrer">
+              Open Full Menu
             </a>
-            <a class="btn" href="https://facebook.com/nabilaskitchendmv" target="_blank" rel="noreferrer">
+
+            <a class="btn btn-soft" href="https://facebook.com/nabilaskitchendmv" target="_blank" rel="noreferrer">
               Facebook Page
             </a>
+
+            <button class="btn btn-soft" id="downloadVcard" type="button" title="Save our contact">
+              Save Our Contact
+            </button>
           </div>
 
-          <!-- Contact (clean rows, number shown once, icon actions on right) -->
+          <!-- Featured items strip -->
+          <div class="featured-strip" aria-label="Featured items">
+            <div class="featured-title">Featured Items</div>
+            <div class="featured-chips">
+              <span class="fchip">Chicken Biryani</span>
+              <span class="fchip">Beef Nihari</span>
+              <span class="fchip">Chicken Karahi</span>
+              <span class="fchip">Haleem</span>
+              <span class="fchip">Gur Rice</span>
+              <span class="fchip">Lahori Samosay</span>
+              <span class="fchip">Shami Kabob</span>
+              <span class="fchip">Chicken Samosa</span>
+              <span class="fchip">Lahori Sajji</span>
+              <span class="fchip">Mutton Pulao</span>
+              <span class="fchip">Dahi Bharay</span>
+            </div>
+          </div>
+
+          <!-- Contact (number once + icon actions) -->
           <div class="contact-wrap" aria-label="Contact options">
 
             <!-- Primary -->
@@ -111,18 +142,19 @@
           <!-- Quick navigation pills -->
           <div class="quick-links">
             <a class="pill" href="#how-to-order">How to Order</a>
-            <a class="pill" href="#tray-sizes">Tray Sizes</a>
+            <a class="pill" href="#what-you-get">What You Get</a>
+            <a class="pill" href="#delivery">Delivery</a>
+            <a class="pill" href="#payment">Payment</a>
             <a class="pill" href="#pricing">Quick Pricing</a>
-            <a class="pill" href="#perfect-for">Perfect For</a>
-            <a class="pill" href="#fried-frozen">Ramadan Special</a>
+            <a class="pill" href="#fried-frozen">Fried/Frozen</a>
             <a class="pill" href="#dessert-bar">Dessert Bar</a>
+            <a class="pill" href="#quick-order">Quick Order</a>
           </div>
 
         </div>
       </div>
 
       <main>
-        
 
         <section id="how-to-order" class="card">
           <h2>How to Order</h2>
@@ -136,6 +168,59 @@
             <b>Pickup & Delivery Available.</b> Delivery fees depend on distance from Leesburg.
           </div>
         </section>
+
+        <!-- What you get -->
+        <section id="what-you-get" class="card">
+          <h2>What You Get</h2>
+          <div class="info-grid">
+            <div class="info-box">
+              <h3>Made Fresh</h3>
+              <p class="muted">Cooked close to your event time for best taste and quality.</p>
+            </div>
+            <div class="info-box">
+              <h3>Tray Catering</h3>
+              <p class="muted">Half / Medium / Full trays for gatherings, parties, and office events.</p>
+            </div>
+            <div class="info-box">
+              <h3>Pickup or Delivery</h3>
+              <p class="muted">We’ll confirm delivery windows once you share your location and event time.</p>
+            </div>
+            <div class="info-box">
+              <h3>Reliable Ordering</h3>
+              <p class="muted">Clear pricing, fast replies, and order confirmation before cooking starts.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Delivery + Payment -->
+        <div class="grid-2">
+          <section id="delivery" class="card">
+            <h2>Delivery Areas</h2>
+            <p class="muted" style="margin-top:0;">Serving the DMV from Leesburg, VA.</p>
+            <ul class="bullets">
+              <li><b>Northern VA:</b> Loudoun, Fairfax, Arlington, Prince William (and nearby)</li>
+              <li><b>Maryland:</b> Montgomery, Prince George’s (and nearby)</li>
+              <li><b>DC:</b> Washington, D.C.</li>
+            </ul>
+            <div class="note">
+              <b>Quick estimate:</b> Share your ZIP code and we’ll confirm delivery availability + fee.
+            </div>
+          </section>
+
+          <section id="payment" class="card">
+            <h2>Payment</h2>
+            <p class="muted" style="margin-top:0;">We accept the following:</p>
+            <ul class="chips">
+              <li>Zelle</li>
+              <li>CashApp</li>
+              <li>Venmo</li>
+              <li>Cash</li>
+            </ul>
+            <div class="note">
+              We’ll send payment details after confirming your order.
+            </div>
+          </section>
+        </div>
 
         <div class="grid-2">
           <section id="tray-sizes" class="card">
@@ -172,7 +257,7 @@
               <h3>Appetizers</h3>
               <p><b>Full:</b> $120 • <b>Medium:</b> $90 • <b>Half:</b> $60</p>
             </div>
-            
+
             <div class="price-card">
               <h3>Chicken Dishes</h3>
               <p><b>Full:</b> $130 • <b>Medium:</b> $100 • <b>Half:</b> $70</p>
@@ -195,10 +280,9 @@
             </div>
 
             <div class="price-card">
-                <h3>Desserts</h3>
-                <p><b>Full:</b> $135 • <b>Medium:</b> $110 • <b>Half:</b> $85</p>
+              <h3>Desserts</h3>
+              <p><b>Full:</b> $135 • <b>Medium:</b> $110 • <b>Half:</b> $85</p>
             </div>
-            
           </div>
 
           <div class="actions">
@@ -210,97 +294,116 @@
         </section>
 
         <!-- Fried / Frozen -->
-<section id="fried-frozen" class="card promo-card">
-  <div class="promo-head">
-    <h2>Fried / Frozen Items</h2>
-    <span class="badge">Perfect for weekly meal prep</span>
-  </div>
+        <section id="fried-frozen" class="card promo-card">
+          <div class="promo-head">
+            <h2>Fried / Frozen Items</h2>
+            <span class="badge">Perfect for weekly meal prep</span>
+          </div>
 
-  <p class="muted" style="margin-top:6px;">
-    Stock up your freezer with ready-to-fry items. Great for <b>Iftaar</b>, parties, and busy weekdays.
-  </p>
+          <p class="muted" style="margin-top:6px;">
+            Stock up your freezer with ready-to-fry items. Great for <b>Iftaar</b>, parties, and busy weekdays.
+          </p>
 
-  <div class="promo-grid">
-    <div class="promo-box">
-      <h3>Popular Items</h3>
-      <ul class="bullets" style="margin:0; padding-left:18px;">
-        <li>Spring Rolls</li>
-        <li>Samosa (Chicken / Beef / Aloo)</li>
-        <li>Shami Kabob</li>
-        <li>Cutlets</li>
-        <li>Puff Patties</li>
-      </ul>
-    </div>
+          <div class="promo-grid">
+            <div class="promo-box">
+              <h3>Popular Items</h3>
+              <ul class="bullets" style="margin:0; padding-left:18px;">
+                <li>Spring Rolls</li>
+                <li>Samosa (Chicken / Beef / Aloo)</li>
+                <li>Shami Kabob</li>
+                <li>Cutlets</li>
+                <li>Puff Patties</li>
+              </ul>
+            </div>
 
-    <div class="promo-box">
-      <h3>How It Works</h3>
-      <ul class="bullets" style="margin:0; padding-left:18px;">
-        <li>Order by text/WhatsApp</li>
-        <li>We prepare fresh and pack safely</li>
-        <li>Pickup or delivery available</li>
-      </ul>
+            <div class="promo-box">
+              <h3>How It Works</h3>
+              <ul class="bullets" style="margin:0; padding-left:18px;">
+                <li>Order by text/WhatsApp</li>
+                <li>We prepare fresh and pack safely</li>
+                <li>Pickup or delivery available</li>
+              </ul>
 
-      <div class="note" style="margin-top:12px;">
-        Want the full fried/frozen list + pricing? Message us and we’ll share options.
-      </div>
-    </div>
-  </div>
+              <div class="note" style="margin-top:12px;">
+                Want the full fried/frozen list + pricing? Message us and we’ll share options.
+              </div>
+            </div>
+          </div>
 
-  <div class="actions">
-    <a class="btn primary" href="https://wa.me/17036877028">Ask About Fried/Frozen</a>
-    <a class="btn" href="#how-to-order">How to Order</a>
-  </div>
-</section>
+          <div class="actions">
+            <a class="btn primary" href="https://wa.me/17036877028">Ask About Fried/Frozen</a>
+            <a class="btn" href="#quick-order">Quick Order Template</a>
+          </div>
+        </section>
 
-<!-- Dessert Bar -->
-<section id="dessert-bar" class="card promo-card">
-  <div class="promo-head">
-    <h2>Dessert Bar</h2>
-    <div class="price-tag">$650</div>
-  </div>
+        <!-- Dessert Bar -->
+        <section id="dessert-bar" class="card promo-card">
+          <div class="promo-head">
+            <h2>Dessert Bar</h2>
+            <div class="price-tag">$650</div>
+          </div>
 
-  <p class="muted" style="margin-top:6px;">
-    Make your event unforgettable with a beautiful dessert setup by <b>Nabila’s Kitchen</b>.
-    Choose <b>any 6</b> handcrafted desserts from the list below.
-  </p>
+          <p class="muted" style="margin-top:6px;">
+            Make your event unforgettable with a beautiful dessert setup by <b>Nabila’s Kitchen</b>.
+            Choose <b>any 6</b> handcrafted desserts from the list below.
+          </p>
 
-  <div class="dessert-layout">
-    <div class="dessert-menu">
-      <h3>Choose Any 6</h3>
-      <div class="dessert-list">
-        <span class="dessert-item">Firni</span>
-        <span class="dessert-item">Kheer</span>
-        <span class="dessert-item">Custard (Vanilla / Strawberry / Mango)</span>
-        <span class="dessert-item">Coffee Delight</span>
-        <span class="dessert-item">Biscoff Trifle</span>
-        <span class="dessert-item">Fruit Chaat</span>
-        <span class="dessert-item">Cream Fruit Chaat</span>
-        <span class="dessert-item">Sewaiyan (Dry or Milk)</span>
-        <span class="dessert-item">Traditional Gur Rice</span>
-        <span class="dessert-item">Traditional Zarda Rice</span>
-      </div>
-    </div>
+          <div class="dessert-layout">
+            <div class="dessert-menu">
+              <h3>Choose Any 6</h3>
+              <div class="dessert-list">
+                <span class="dessert-item">Firni</span>
+                <span class="dessert-item">Kheer</span>
+                <span class="dessert-item">Custard (Vanilla / Strawberry / Mango)</span>
+                <span class="dessert-item">Coffee Delight</span>
+                <span class="dessert-item">Biscoff Trifle</span>
+                <span class="dessert-item">Fruit Chaat</span>
+                <span class="dessert-item">Cream Fruit Chaat</span>
+                <span class="dessert-item">Sewaiyan (Dry or Milk)</span>
+                <span class="dessert-item">Traditional Gur Rice</span>
+                <span class="dessert-item">Traditional Zarda Rice</span>
+              </div>
+            </div>
 
-    <div class="dessert-details">
-      <h3>Portion Details</h3>
-      <ul class="bullets" style="margin:0; padding-left:18px;">
-        <li><b>Rice & Sewaiyan items:</b> Half tray</li>
-        <li><b>All other desserts:</b> 10 individual cups</li>
-      </ul>
+            <div class="dessert-details">
+              <h3>Portion Details</h3>
+              <ul class="bullets" style="margin:0; padding-left:18px;">
+                <li><b>Rice & Sewaiyan items:</b> Half tray</li>
+                <li><b>All other desserts:</b> 10 individual cups</li>
+              </ul>
 
-      <div class="note" style="margin-top:12px;">
-        <b>Medium and full tray options</b> are available upon request.
-        Prices may vary based on tray size and customization.
-      </div>
+              <div class="note" style="margin-top:12px;">
+                <b>Medium and full tray options</b> are available upon request.
+                Prices may vary based on tray size and customization.
+              </div>
 
-      <div class="actions" style="margin-top:14px;">
-        <a class="btn primary" href="https://wa.me/17036877028">Book Dessert Bar</a>
-        <a class="btn" href="sms:+17036877028">Text Us</a>
-      </div>
-    </div>
-  </div>
-</section>
+              <div class="actions" style="margin-top:14px;">
+                <a class="btn primary" href="https://wa.me/17036877028">Book Dessert Bar</a>
+                <a class="btn" href="sms:+17036877028">Text Us</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <!-- Quick order template (copy/paste) -->
+        <section id="quick-order" class="card">
+          <h2>Quick Order Template</h2>
+          <p class="muted" style="margin-top:0;">
+            Copy this message, fill it out, and send it by WhatsApp or text.
+          </p>
+
+          <div class="template-wrap">
+            <textarea id="orderTemplate" class="template-box" rows="8" readonly></textarea>
+
+            <div class="template-actions">
+              <button class="btn primary" id="copyTemplate" type="button">Copy Message</button>
+              <a class="btn" href="https://wa.me/17036877028" target="_blank" rel="noreferrer">Open WhatsApp</a>
+              <a class="btn" href="sms:+17036877028">Open Text</a>
+            </div>
+
+            <div class="small muted" id="copyStatus" aria-live="polite" style="margin-top:10px;"></div>
+          </div>
+        </section>
 
         <section class="card">
           <h2>Photo Gallery</h2>
@@ -323,7 +426,80 @@
   </div>
 
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Quick order template
+    const templateText =
+`Salam! I’d like to place an order.
+
+Dish(es):
+Tray size: Half / Medium / Full
+Quantity:
+Event date + time:
+Pickup or delivery + address (or ZIP code):
+Any notes / allergies:
+
+Thank you!`;
+
+    const templateEl = document.getElementById("orderTemplate");
+    templateEl.value = templateText;
+
+    // Copy helper (with fallback)
+    async function copyToClipboard(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (e) {
+        try {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          const ok = document.execCommand("copy");
+          document.body.removeChild(ta);
+          return ok;
+        } catch (e2) {
+          return false;
+        }
+      }
+    }
+
+    document.getElementById("copyTemplate").addEventListener("click", async () => {
+      const ok = await copyToClipboard(templateText);
+      document.getElementById("copyStatus").textContent = ok ? "Copied! Paste it into WhatsApp or Text." : "Could not copy. Please select and copy manually.";
+    });
+
+    // vCard download
+    document.getElementById("downloadVcard").addEventListener("click", () => {
+      const siteUrl = window.location.origin + window.location.pathname;
+      const vcard =
+`BEGIN:VCARD
+VERSION:3.0
+FN:Nabila's Kitchen - DMV
+ORG:Nabila's Kitchen
+TEL;TYPE=CELL:+17036877028
+TEL;TYPE=CELL:+15407578190
+URL:${siteUrl}
+URL:https://facebook.com/nabilaskitchendmv
+NOTE:Halal desi catering based in Leesburg, VA. Serving VA/MD/DC. Order at least 48 hours in advance. Text/WhatsApp preferred.
+END:VCARD`;
+
+      const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Nabilas-Kitchen-DMV.vcf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+
+      URL.revokeObjectURL(url);
+    });
   </script>
 </body>
 </html>
